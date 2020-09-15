@@ -1,0 +1,111 @@
+$font-family: "Josefin Sans", sans-serif;
+$font-color: #232931;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.navigation {
+  background-color: $font-color;
+
+  .nav-link {
+    color: white !important;
+    font-family: $font-family;
+  }
+
+  .nav-link:hover {
+    color: black !important;
+    background-color: pink;
+  }
+}
+
+.greet {
+    padding-top: 100px;
+    font-family: $font-family;
+    color: $font-color;
+
+  h4 {
+    padding: 20px;
+  }
+
+  .list-name {
+    margin: 10px;
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+}
+
+.reviews {
+    font-family: $font-family;
+    color: $font-color;
+    background-color: #e79cc2;
+    margin-top: 50px;
+
+    h3, p {
+        padding: 10px;
+    }
+
+}
+
+.gallery-title {
+  background-color: #e79cc2;
+  font-family: $font-family;
+  h3 {
+    color: $font-color;
+    padding: 5px;
+  }
+}
+.gallery {
+  margin-top: 50px;
+}
+
+
+
+
+.page-footer {
+  background-color: $font-color;
+  font-family: $font-family;
+  padding-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+
+  h6 {
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 10px;
+  }
+
+  .line {
+    border-top: 1px solid rgb(160, 149, 149);
+  }
+
+  a {
+    color: white;
+    font-size: 30px;
+  }
+
+  a:hover {
+    color: hotpink;
+    text-decoration: none;
+    
+  }
+
+
+
+  a.telephone, a.email {
+    font-size: 20px;
+  }
+
+  .contact {
+    padding: 30px;
+  }
+
+.phone, .envelope {
+  color:white;
+  font-size: 30px;
+  padding: 10px;
+}
+}

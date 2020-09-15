@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.navigation {
+  background-color: #232931;
+}
+
+.navigation .nav-link {
+  color: white !important;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navigation .nav-link:hover {
+  color: black !important;
+  background-color: pink;
+}
+
+.greet {
+  padding-top: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #232931;
+}
+
+.greet h4 {
+  padding: 20px;
+}
+
+.greet .list-name {
+  margin: 10px;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.reviews {
+  font-family: "Josefin Sans", sans-serif;
+  color: #232931;
+  background-color: #e79cc2;
+  margin-top: 50px;
+}
+
+.reviews h3, .reviews p {
+  padding: 10px;
+}
+
+.gallery-title {
+  background-color: #e79cc2;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.gallery-title h3 {
+  color: #232931;
+  padding: 5px;
+}
+
+.gallery {
+  margin-top: 50px;
+}
+
+.page-footer {
+  background-color: #232931;
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.page-footer h6 {
+  color: white;
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+
+.page-footer .line {
+  border-top: 1px solid #a09595;
+}
+
+.page-footer a {
+  color: white;
+  font-size: 30px;
+}
+
+.page-footer a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+.page-footer a.telephone, .page-footer a.email {
+  font-size: 20px;
+}
+
+.page-footer .contact {
+  padding: 30px;
+}
+
+.page-footer .phone, .page-footer .envelope {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
