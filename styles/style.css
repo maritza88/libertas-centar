@@ -2,17 +2,19 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url(/background.svg);
+  background-repeat: repeat;
 }
 
-.navigation {
-  background-color: #232931;
+.navigation .logo {
+  width: 120px;
+  height: auto;
 }
 
 .navigation .nav-link {
-  color: white !important;
+  color: #232931 !important;
   font-family: "Josefin Sans", sans-serif;
+  background-color: #d7e2e7;
 }
 
 .navigation .nav-link:hover {
@@ -21,19 +23,53 @@ body {
 }
 
 .greet {
-  padding-top: 100px;
+  background-color: #faebf3;
+}
+
+.greet .hello {
+  font-family: "Great Vibes", cursive;
+  padding: 30px;
+  font-size: 4rem;
+}
+
+.greet .greet-text {
   font-family: "Josefin Sans", sans-serif;
-  color: #232931;
-}
-
-.greet h4 {
   padding: 20px;
+  line-height: 2;
 }
 
-.greet .list-name {
-  margin: 10px;
+.offer {
   font-size: 1em;
   letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: white;
+  -webkit-filter: drop-shadow(20px 10px 4px #949494);
+          filter: drop-shadow(20px 10px 4px #949494);
+  border: 1px solid #cecbcb;
+}
+
+.offer h4 {
+  padding: 20px;
+  font-size: 1.8rem;
+}
+
+.offer p {
+  font-size: 1.1rem;
+}
+
+.offer .img-offer {
+  height: 150px;
+}
+
+.gallery {
+  margin-top: 50px;
+}
+
+.gallery h3 {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #232931;
+  color: white;
+  padding: 20px;
 }
 
 .reviews {
@@ -43,22 +79,9 @@ body {
   margin-top: 50px;
 }
 
-.reviews h3, .reviews p {
+.reviews h3,
+.reviews p {
   padding: 10px;
-}
-
-.gallery-title {
-  background-color: #e79cc2;
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.gallery-title h3 {
-  color: #232931;
-  padding: 5px;
-}
-
-.gallery {
-  margin-top: 50px;
 }
 
 .page-footer {
@@ -72,6 +95,7 @@ body {
 .page-footer h6 {
   color: white;
   letter-spacing: 2px;
+  line-spacing: 5px;
   padding-top: 10px;
 }
 
@@ -81,7 +105,7 @@ body {
 
 .page-footer a {
   color: white;
-  font-size: 30px;
+  font-size: 1.2rem;
 }
 
 .page-footer a:hover {
@@ -89,17 +113,63 @@ body {
   text-decoration: none;
 }
 
-.page-footer a.telephone, .page-footer a.email {
-  font-size: 20px;
-}
-
 .page-footer .contact {
   padding: 30px;
 }
 
-.page-footer .phone, .page-footer .envelope {
+.news {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 30px;
+}
+
+.news a {
   color: white;
-  font-size: 30px;
-  padding: 10px;
+}
+
+.news a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+.news h4 {
+  padding: 20px;
+}
+
+#button {
+  display: inline-block;
+  background-color: #e79cc2;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: hotpink;
+  text-decoration: none;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,18 +1,25 @@
-$font-family: "Josefin Sans", sans-serif;
+$font-family: "Josefin Sans",
+sans-serif;
 $font-color: #232931;
+
 body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url(/background.svg);
+  background-repeat: repeat;
 }
+
 .navigation {
-  background-color: $font-color;
+  .logo {
+    width: 120px;
+    height: auto;
+  }
 
   .nav-link {
-    color: white !important;
+    color: $font-color !important;
     font-family: $font-family;
+    background-color: rgb(215, 226, 231);
   }
 
   .nav-link:hover {
@@ -22,47 +29,70 @@ body {
 }
 
 .greet {
-    padding-top: 100px;
+  background-color: rgb(250, 235, 243);
+
+  .hello {
+    font-family: "Great Vibes", cursive;
+    padding: 30px;
+    font-size: 4rem;
+  }
+
+  .greet-text {
     font-family: $font-family;
-    color: $font-color;
+    padding: 20px;
+    line-height: 2;
+  }
+}
+
+.offer {
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-family: $font-family;
+  background-color: white;
+  filter: drop-shadow(20px 10px 4px #949494);
+  border: 1px solid #cecbcb;
 
   h4 {
     padding: 20px;
+    font-size: 1.8rem;
   }
 
-  .list-name {
-    margin: 10px;
-    font-size: 1em;
-    letter-spacing: 2px;
+  p {
+    font-size: 1.1rem;
+  }
+
+  .img-offer {
+    height: 150px;
   }
 }
 
-.reviews {
-    font-family: $font-family;
-    color: $font-color;
-    background-color: #e79cc2;
-    margin-top: 50px;
 
-    h3, p {
-        padding: 10px;
-    }
-
-}
-
-.gallery-title {
-  background-color: #e79cc2;
-  font-family: $font-family;
-  h3 {
-    color: $font-color;
-    padding: 5px;
-  }
-}
 .gallery {
   margin-top: 50px;
+
+
+  h3 {
+    font-family: $font-family;
+    background-color: #232931;
+    color: white;
+    padding: 20px;
+  }
+
+
 }
 
 
+.reviews {
+  font-family: $font-family;
+  color: $font-color;
+  background-color: #e79cc2;
+  margin-top: 50px;
 
+  h3,
+  p {
+    padding: 10px;
+  }
+}
 
 .page-footer {
   background-color: $font-color;
@@ -71,10 +101,10 @@ body {
   margin-bottom: 0;
   padding-bottom: 0;
 
-
   h6 {
     color: white;
     letter-spacing: 2px;
+    line-spacing: 5px;
     padding-top: 10px;
   }
 
@@ -84,28 +114,77 @@ body {
 
   a {
     color: white;
-    font-size: 30px;
+    font-size: 1.2rem;
   }
 
   a:hover {
     color: hotpink;
     text-decoration: none;
-    
-  }
-
-
-
-  a.telephone, a.email {
-    font-size: 20px;
   }
 
   .contact {
     padding: 30px;
   }
-
-.phone, .envelope {
-  color:white;
-  font-size: 30px;
-  padding: 10px;
 }
+
+.news {
+
+  font-family: $font-family;
+  margin-top: 30px;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: hotpink;
+    text-decoration: none;
+  }
+
+  h4 {
+    padding: 20px;
+  }
+
+
+
+}
+
+//Back to top button
+
+#button {
+  display: inline-block;
+  background-color: #e79cc2;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: hotpink;
+  text-decoration: none;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
