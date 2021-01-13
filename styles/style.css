@@ -6,8 +6,12 @@ body {
   background-repeat: repeat;
 }
 
+.christmas {
+  background-color: white;
+}
+
 .navigation .logo {
-  width: 120px;
+  width: 188px;
   height: auto;
 }
 
@@ -127,7 +131,7 @@ body {
 }
 
 .news a:hover {
-  color: hotpink;
+  color: yellowgreen;
   text-decoration: none;
 }
 

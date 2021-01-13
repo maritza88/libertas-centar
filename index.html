@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Libertas - Centar stranih jezika" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/libcentar.svg" />
+    <meta property="og:image" content="images/img2.jpg" />
     <meta
       property="og:description"
       content="Centar stranih jezika. Iskoristite priliku da naučite engleski ili španski jezik u Zrenjaninu."
@@ -34,9 +34,31 @@
       integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
       crossorigin="anonymous"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KBBGYWZLTR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KBBGYWZLTR');
+</script>
   </head>
 
   <body>
+
+<!---Christmas Modal-->
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-body christmas">
+                <img class="img-fluid" src="ccard.png">
+              </div>
+          </div>
+      </div>
+  </div>
+
     <!--Back to top button-->
 
     <a id="button"></a>
@@ -185,40 +207,40 @@
         <h3>Galerija</h3>
       </div>
       <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <div class="row align-items-center">
             <a
-              href="images/img1.jpg"
+              href="images/DSC_0003.JPG"
               data-toggle="lightbox"
               data-gallery="mixedgallery"
               class="col-sm-4"
             >
               <img
-                src="images/img1.jpg"
+                src="images/DSC_0003.JPG"
                 class="img-thumbnail"
                 alt="gallery photo of classrom"
               />
             </a>
             <a
-              href="images/img3.jpg"
+              href="images/DSC_0002.JPG"
               data-toggle="lightbox"
               data-gallery="mixedgallery"
               class="col-sm-4"
             >
               <img
-                src="images/img3.jpg"
+                src="images/DSC_0002.JPG"
                 class="img-thumbnail"
                 alt="gallery photo of classrom"
               />
             </a>
             <a
-              href="images/img5.jpg"
+              href="images/DSC_0005.JPG"
               data-toggle="lightbox"
               data-gallery="mixedgallery"
               class="col-sm-4"
             >
               <img
-                src="images/img5.jpg"
+                src="images/DSC_0005.JPG"
                 class="img-thumbnail text-center"
                 alt="gallery photo of classrom"
               />
@@ -226,37 +248,37 @@
           </div>
           <div class="row align-items-center">
             <a
-              href="images/img4.jpg"
+              href="images/DSC_0014.JPG"
               data-toggle="lightbox"
               data-gallery="mixedgallery"
               class="col-sm-4"
             >
               <img
-                src="images/img4.jpg"
+                src="images/DSC_0014.JPG"
                 class="img-thumbnail"
                 alt="gallery photo of classrom"
               />
             </a>
             <a
-              href="images/img6.jpg"
+              href="images/DSC_0067.JPG"
               data-toggle="lightbox"
               data-gallery="mixedgallery"
               class="col-sm-4"
             >
               <img
-                src="images/img6.jpg"
+                src="images/DSC_0067.JPG"
                 class="img-thumbnail"
                 alt="gallery photo of classrom"
               />
             </a>
             <a
-              href="images/img2.jpg"
+              href="images/DSC_0046.JPG"
               data-toggle="lightbox"
               data-gallery="mixedgallery"
               class="col-sm-4"
             >
               <img
-                src="images/img2.jpg"
+                src="images/DSC_0046.JPG"
                 class="img-thumbnail"
                 alt="gallery photo of classrom"
               />
@@ -408,7 +430,11 @@
       integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
       crossorigin="anonymous"
     ></script>
-
+<script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
     <script src="ekko-lightbox.js"></script>
     <script>
       $(document).on("click", '[data-toggle="lightbox"]', function (event) {
